@@ -1,0 +1,10 @@
+query Posts {
+  posts {
+    id
+    title
+    slug
+    tags {
+      name
+    }
+  }
+}

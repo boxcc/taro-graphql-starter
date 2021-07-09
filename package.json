@@ -26,7 +26,8 @@
     "dev:rn": "npm run build:rn -- --watch",
     "dev:qq": "npm run build:qq -- --watch",
     "dev:jd": "npm run build:jd -- --watch",
-    "dev:quickapp": "npm run build:quickapp -- --watch"
+    "dev:quickapp": "npm run build:quickapp -- --watch",
+    "codegen": "graphql-codegen --config codegen.yml"
   },
   "browserslist": [
     "last 3 versions",
@@ -42,7 +43,6 @@
     "@tarojs/runtime": "3.2.15",
     "@tarojs/taro": "3.2.15",
     "graphql": "^15.5.1",
-    "graphql-request": "^3.4.0",
     "lodash": "4.17.15",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
@@ -51,6 +51,11 @@
   },
   "devDependencies": {
     "@babel/core": "^7.8.0",
+    "@graphql-codegen/cli": "1.21.6",
+    "@graphql-codegen/introspection": "1.18.2",
+    "@graphql-codegen/typescript": "1.22.4",
+    "@graphql-codegen/typescript-operations": "1.18.3",
+    "@graphql-codegen/typescript-react-query": "^1.3.4",
     "@tarojs/mini-runner": "3.2.15",
     "@tarojs/webpack-runner": "3.2.15",
     "@types/react": "^17.0.2",

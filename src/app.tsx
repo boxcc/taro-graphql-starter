@@ -3,6 +3,7 @@ import {
   QueryClient,
   QueryClientProvider
 } from 'react-query'
+import 'taro-ui/dist/style/components/button.scss' // 按需引入
 
 import './app.scss'
 
