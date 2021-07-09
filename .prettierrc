@@ -1,0 +1,9 @@
+{
+  "eslintIntegration": true,
+  "stylelintIntegration": true,
+  "tslintIntegration": true,
+  "tabWidth": 2,
+  "singleQuote": true,
+  "semi": false,
+  "jsxSingleQuote": true
+}
