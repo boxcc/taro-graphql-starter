@@ -1,4 +1,5 @@
 import Taro from '@tarojs/taro'
+import config from '@/config';
 
 export function fetcher<TData, TVariables>(
   query: string,
@@ -6,7 +7,7 @@ export function fetcher<TData, TVariables>(
 ) {
   return async (): Promise<TData> => {
     const res = await Taro.request({
-      url: 'http://192.168.68.125:1337/graphql',
+      url: config.gqlEndpoint,
       method: 'POST',
       data: { query, variables }
     })
